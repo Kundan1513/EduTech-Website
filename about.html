@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduTech Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>ABOUT US</h1>
+    </section>
+
+   <!-- ABOUT US CONTENT -->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>WE ARE THE LARGEST UNIVERSITY</h1>
+                <p>EduTech university is an institution of higher education that focuses on providing specialized education in engineering, technology, and applied sciences. These universities are known for their emphasis on practical and technical skills, often integrating theoretical knowledge with hands-on experience. <br>
+
+                    1. Specialized Programs: They offer programs and degrees in fields such as engineering, computer science, information technology, industrial design, and applied sciences. These programs are designed to equip students with both foundational knowledge and practical skills. <br>
+                    
+                    2. Research and Development: Technical universities often engage in cutting-edge research and development, contributing to advancements in technology and industry. They may have research centers and labs dedicated to various fields of study. <br>
+                    
+                    3. Industry Collaboration: They frequently collaborate with industry partners to ensure that their curriculum meets current industry standards and to provide students with real-world experience through internships and projects. <br>
+                    
+                    4. Hands-On Learning: The education model at technical universities often includes practical components, such as lab work, simulations, and industry-based projects, to prepare students for real-world challenges. <br>
+                    
+                    5. Innovation and Entrepreneurship: Many technical universities encourage innovation and entrepreneurship, offering support for startups and new technology ventures. <br>
+                    
+                    6. Global Perspective: They often have a global outlook, with programs that prepare students for international careers and collaborations. This can include exchange programs, international research partnerships, and multicultural learning environments. <br>
+                    </p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg">
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>EduTech is a premier institution dedicated to advancing knowledge and innovation in science, technology, engineering, and mathematics (STEM). Known for its rigorous academic programs and cutting-edge research, the university offers a dynamic environment for students to excel in their fields of interest.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </section>
+
+    <!-- TOGGLE MENU -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
